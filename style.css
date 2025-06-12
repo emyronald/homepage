@@ -6,12 +6,12 @@
 
 :root {
   --primary-color: #0077b5; /* LinkedIn blue */
-  --secondary-color: #ffffff; /* White */
+
   --accent-color: #f0f0f0; /* Light grey for accents */
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   margin-bottom: 1rem;
 }
 
@@ -30,26 +30,33 @@ body {
 }
 
 header {
-  background-color: #f0f0f0;
+  background-color: white;
   padding: 2rem;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
-figure img {
-  width: 100%;
-  height: auto;
-}
 
 figure {
   width: fit-content;
   position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 30rem;
+  overflow: hidden;
+  max-height: 37rem;
 }
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 figcaption {
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -192,10 +199,12 @@ footer i {
   border: 5px solid var(--primary-color);
   border-radius: 12px;
   margin: 1rem;
+  background-color: white;
 }
 
 .projects {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .copyright {
@@ -208,7 +217,7 @@ footer i {
 nav {
   background-color: var(--primary-color);
   padding: 1rem;
-  color: var(--secondary-color);
+  color: white;
   height: 80px;
 }
 
@@ -254,7 +263,7 @@ aside {
   width: 250px;
   height: 100%;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: white;
   padding: 2rem;
   z-index: 2;
   opacity: 0;
@@ -304,6 +313,8 @@ aside.active {
 
 main{
   padding: 3rem;
+  background-color:rgb(128, 128, 128, 0.2);
+
 }
 
 @media (max-width: 600px) {
