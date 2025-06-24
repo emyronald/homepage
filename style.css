@@ -334,6 +334,7 @@ footer h2 {
   text-align: start;
 }
 
+
 @media (max-width: 600px) {
   nav {
     display: flex;
@@ -365,6 +366,9 @@ footer h2 {
   }
   footer {
     padding: 1rem 0;
+  }
+  .about p {
+    text-align: center;
   }
 }
 
