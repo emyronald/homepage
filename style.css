@@ -370,7 +370,16 @@ footer h2 {
   .about p {
     text-align: center;
   }
+  .about {
+    padding: .1rem;
+    padding-bottom: 1rem
+  }
+  .contact {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
 }
+
 
 @media (min-width: 1024px) {
   .project-list {
